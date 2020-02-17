@@ -1,0 +1,26 @@
+<ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-back-button text="" defaultHref="/tabs"></ion-back-button>
+  </ion-buttons>
+  <ion-title>Salários</ion-title>
+</ion-toolbar>
+
+<ion-content>
+  <div class="space-green"></div>
+   <div class="center-content">
+  <ion-grid>
+    <ion-row>
+      <ion-col>Empresa</ion-col>
+      <ion-col>Mês</ion-col>
+      <ion-col>Valor</ion-col>
+    </ion-row>
+    <div *ngFor="let item of lista">
+      <ion-row>
+        <ion-col>{{ item.nome }}</ion-col>
+        <ion-col>{{ item.mes }}</ion-col>
+        <ion-col>{{ item.valor }}</ion-col>
+      </ion-row>
+    </div>
+  </ion-grid>
+</div>
+</ion-content>

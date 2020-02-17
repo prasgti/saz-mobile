@@ -1,0 +1,139 @@
+ion-title {
+  font-size: 22px;
+  font-family: 'nunito-extrabold';
+
+  span {
+
+  }
+}
+
+ion-content {
+  --background: var(--ion-color-primary);
+}
+
+.space-green {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 9;
+  position: absolute;
+  background-color: var(--ion-color-primary);
+}
+
+.container {
+  z-index: 99;
+  position: relative;
+
+  .container-buttons {
+    padding-top: 20px;
+
+    .title-home {
+      margin-top: 0px !important;
+      font-size: 20px;
+      padding-left: 8px;
+      color:  var(--ion-color-white);
+    }
+
+    .sugestion {
+      margin-bottom: 10px !important;
+
+      ion-card-content {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        background-color: var(--ion-color-primary-tint);
+        ion-col {
+          display: flex !important;
+          align-content: center !important;
+          align-items: center !important;
+        }
+      }
+    }
+
+    .center-buttons {
+      width: 100%;
+      max-width: 420px;
+      margin: 0 auto;
+      padding: 0px 16px;
+
+      ion-row {
+        ion-col {
+          ion-card {
+            width: 100%;
+            margin: 0px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
+            color: var(--ion-color-primary);
+            --background: transparent !important;
+            --border-radius: 27.5px;
+            border-color: var(--ion-color-white);
+            border-width: 1px;
+            border-style: solid;
+            --box-shadow: none;
+
+            .box-icon {
+              width: 100%;
+              height: 42px;
+              text-align: center;
+              ion-icon {
+                font-size: 30px;
+                color:  var(--ion-color-white);
+              }
+            }
+
+            .box-info {
+              text-align: center;
+              span {
+                width: 100%;
+                font-size: 14px;
+                line-height: 16px;
+                display: block;
+                font-family: 'nunito-bold';
+                color: var(--ion-color-white);
+              }
+            }
+
+            .box-info-2 {
+              text-align: left;
+              padding-left: 8px;
+              span {
+                width: 100%;
+                font-size: 14px;
+                line-height: 16px;
+                display: block;
+                font-family: 'nunito-bold';
+                color: var(--ion-color-white);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Iphone 5
+@media (max-width: 320px) {
+  .container {
+    .container-buttons {
+      .center-buttons {
+        ion-row {
+          ion-col {
+            ion-card {
+              .box-info {
+                padding-top: 5px;
+
+                span {
+                  width: 100%;
+                  font-size: 12px;
+                  line-height: 16px;
+                  padding-right: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

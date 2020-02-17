@@ -1,0 +1,159 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      SaZ
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="space-green"></div>
+
+  <div class="container">
+    <div class="container-buttons">
+      <div class="center-buttons">
+        <h2 class="title-home">Plataforma de Serviços</h2>
+        <ion-row>
+          <ion-col size="12">
+            <ion-card class="sugestion">
+              <ion-card-content>
+                <ion-row>
+                  <ion-col size="2">
+                    <div class="box-icon">
+                      <ion-icon src="assets/custom-icons/sugestao.svg"></ion-icon>
+                    </div>
+                  </ion-col>
+                  <ion-col size="10">
+                    <div class="box-info-2">
+                      <span><b>Cuidado!</b> Você esta gastando mais do que ganha, saldo baixo na conta do <b> Banco do Brasil! </b></span>
+                    </div>
+                  </ion-col>
+                </ion-row>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+
+          <ion-col size="6">
+            <ion-card (click)="featureSaz()">
+              <ion-card-content>
+                <div class="box-icon">
+                    <ion-icon src="assets/custom-icons/financas.svg"></ion-icon>
+                </div>
+                <div class="box-info">
+                  <span>SaZ</span>
+                </div>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+
+          <ion-col size="6">
+            <ion-card (click)="featureFinancialPay()">
+              <ion-card-content>
+                <div class="box-icon">
+                    <ion-icon src="assets/custom-icons/financas.svg"></ion-icon>
+                </div>
+                <div class="box-info">
+                  <span>Salário</span>
+                </div>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+
+          <ion-col size="6">
+            <ion-card (click)="featureReduzirDividas()">
+              <ion-card-content>
+                <div class="box-icon">
+                    <ion-icon src="assets/custom-icons/continue.svg"></ion-icon>
+                </div>
+                <div class="box-info">
+                  <span>Reduzir Dívidas</span>
+                </div>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+
+          <ion-col size="6">
+            <ion-card (click)="featureOpenBanking()" >
+              <ion-card-content>
+                <div class="box-icon">
+                    <ion-icon src="assets/custom-icons/bank-sign.svg"></ion-icon>
+                </div>
+                <div class="box-info">
+                  <span>Open Banking</span>
+                </div>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+
+          <ion-col size="6">
+              <ion-card  (click)="featureLoan()">
+                <ion-card-content>
+                  <div class="box-icon">
+                      <ion-icon src="assets/custom-icons/extrato.svg"></ion-icon>
+                  </div>
+                  <div class="box-info">
+                    <span>Empréstimo</span>
+                  </div>
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+
+           <ion-col size="6">
+              <ion-card (click)="featureInvestimento()">
+                <ion-card-content>
+                  <div class="box-icon">
+                      <ion-icon src="assets/custom-icons/investimentos.svg"></ion-icon>
+                  </div>
+                  <div class="box-info">
+                    <span>Contas</span>
+                  </div>
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+
+            <ion-col size="6">
+              <ion-card (click)="featureFuture()" >
+                <ion-card-content>
+                  <div class="box-icon">
+                      <ion-icon src="assets/custom-icons/calendario.svg"></ion-icon>
+                  </div>
+                  <div class="box-info">
+                    <span>Planejamento</span>
+                  </div>
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+
+          <!--
+            <ion-col size="6">
+              <ion-card (click)="featureFuture()">
+                <ion-card-content>
+                  <div class="box-icon">
+                      <ion-icon src="assets/custom-icons/home.svg"></ion-icon>
+                  </div>
+                  <div class="box-info">
+                    <span> Imobiliário </span>
+                  </div>
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+            <ion-col size="6">
+              <ion-card (click)="featureFuture()">
+                <ion-card-content>
+                  <div class="box-icon">
+                      <ion-icon src="assets/custom-icons/seguros.svg"></ion-icon>
+                  </div>
+                  <div class="box-info">
+                    <span>Seguro</span>
+                  </div>
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+             -->
+        </ion-row>
+
+      </div>
+    </div>
+    
+  </div>
+</ion-content>

@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="space-green"></div>
+  <div class="center-content">
+    <ion-card class="card-no-radius">
+      <ion-list>
+        <ion-item (click)="loginRegistrato()">
+          <ion-label>
+            Login Registrato
+          </ion-label>
+          <ion-icon src="assets/custom-icons/seta-pequena-direita.svg" slot="end"></ion-icon>
+        </ion-item>
+        <ion-item (click)="changePassword()">
+          <ion-label>
+            Alterar senha
+          </ion-label>
+          <ion-icon src="assets/custom-icons/seta-pequena-direita.svg" slot="end"></ion-icon>
+        </ion-item>
+        <ion-item (click)="changePassword()">
+          <ion-label>
+            Excluir Conta
+          </ion-label>
+          <ion-icon src="assets/custom-icons/seta-pequena-direita.svg" slot="end"></ion-icon>
+        </ion-item>
+        <ion-item (click)="openTerms()">
+          <ion-label>
+            Termo de uso
+          </ion-label>
+          <ion-icon src="assets/custom-icons/seta-pequena-direita.svg" slot="end"></ion-icon>
+        </ion-item>
+        <ion-item (click)="logout()">
+          <ion-label>
+            Sair do aplicativo
+          </ion-label>
+          <ion-icon src="assets/custom-icons/seta-pequena-direita.svg" slot="end"></ion-icon>
+        </ion-item>
+      </ion-list>
+    </ion-card>
+  </div>
+</ion-content>
